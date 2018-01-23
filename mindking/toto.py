@@ -1,7 +1,7 @@
 import sqlite3
 import pymysql
-p = pymysql.connect(host='106.14.121.43', user='root',
-                    password='abc123456', db='data',charset="utf8")
+p = pymysql.connect(host='', user='',
+                    password='', db='',charset="utf8")
 cp = p.cursor()
 s = sqlite3.connect('data.db')
 cs = s.cursor()
