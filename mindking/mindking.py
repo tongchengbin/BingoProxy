@@ -8,8 +8,7 @@ import sqlite3
 import pymysql
 # conn=sqlite3.connect("data.db")
 # c=conn.cursor()
-conn = pymysql.connect(host='106.14.121.43', user='root',
-                       password='abc123456', db='data', charset="utf8")
+conn = pymysql.connect()
 c = conn.cursor()
 sql = "select answer from questions where quiz='{}'"
 import json
