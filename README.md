@@ -1,14 +1,31 @@
-
-
-flow.request
-
-['__abstractmethods__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_get_content_type_charset', '_get_cookies', '_get_multipart_form', '_get_query', '_get_urlencoded_form', '_guess_encoding', '_parse_host_header', '_set_cookies', '_set_multipart_form', '_set_query', '_set_urlencoded_form', 'anticache', 'anticomp', 'constrain_encoding', 'content', 'cookies', 'copy', 'data', 'decode', 'encode', 'first_line_format', 'from_state', 'get_content', 'get_state', 'get_text', 'headers', 'host', 'host_header', 'http_version', 'is_replay', 'method', 'multipart_form', 'path', 'path_components', 'port', 'pretty_host', 'pretty_url', 'query', 'raw_content', 'replace', 'scheme', 'set_content', 'set_state', 'set_text', 'stream', 'text', 'timestamp_end', 'timestamp_start', 'url', 'urlencoded_form', 'wrap']
-
-
-flow.response
-
-['__abstractmethods__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_get_content_type_charset', '_get_cookies', '_guess_encoding', '_set_cookies', 'content', 'cookies', 'copy', 'data', 'decode', 'encode', 'from_state', 'get_content', 'get_state', 'get_text', 'headers', 'http_version', 'is_replay', 'make', 'raw_content', 'reason', 'refresh', 'replace', 'set_content', 'set_state', 'set_text', 'status_code', 'stream', 'text', 'timestamp_end', 'timestamp_start', 'wrap']
-
-
-<class 'mitmproxy.net.http.headers.Headers'>
-['_MutableMapping__marker', '__abstractmethods__', '__bytes__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__setattr__', '__setitem__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_kconv', '_reduce_values', 'add', 'clear', 'collect', 'copy', 'fields', 'from_state', 'get', 'get_all', 'get_state', 'insert', 'items', 'keys', 'pop', 'popitem', 'replace', 'set_all', 'set_state', 'setdefault', 'update', 'values']
+# 开始
+git clone git@github.com:tongchengbin/BingoProxy.git
+# 设置
+  填写数据库信息 redis
+# 开始使用
+## 启动
+mitmdump -s BingoProxy.py
+![http://ozelrebbz.bkt.clouddn.com/2f578bdee356acfe765c09bc92b54108.png](http://ozelrebbz.bkt.clouddn.com/2f578bdee356acfe765c09bc92b54108.png)
+## 设置代理
+  windows
+  这里以360浏览器为例
+![](http://ozelrebbz.bkt.clouddn.com/ac760cd5e76a08f3ab75442190d562ad.png)
+## 安装证书
+访问mitm.it
+出现如下界面 代理设置正确
+![](http://ozelrebbz.bkt.clouddn.com/d922840854af2687be2d86c0ddfc9c36.png)
+出现如下界面  代理设置错误
+![](http://ozelrebbz.bkt.clouddn.com/9cc3ffafc3f0ef0c793ceac7a2c97bf5.png)
+选择相应设备的证书 安装至根目录
+# web控制器
+web控制器是基于flask编写的 目前只实现了简单的功能 后期会慢慢改善
+运行webcontrol.py 打开web控制器127.0.0.1:5004
+![](http://ozelrebbz.bkt.clouddn.com/e95960552f7f3fa0654731f4a71263d8.png)
+## 监听方式
+### 全监听方式
+    即监听所有请求
+### 根据请求url进行匹配 可以指定具体的URL 同时支持正则表达式
+### 根据文件类型监听 例如.html文件 text/html
+### 停止监听
+![](http://ozelrebbz.bkt.clouddn.com/db4ba0f77fd3b568683f4395b468537e.png)
+]
