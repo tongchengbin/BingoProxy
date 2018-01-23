@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <title>BingoProxy</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+      <style type="text/css">
+          .views{
+              box-shadow:    -2px 0px  1px rgba(87, 63, 74, 0.65);
+              position: fixed;
+              overflow: auto;
+              top: 0;
+              bottom: 0;
+              right: 0;
+              width: 50%;
+              background: #fbf6fd;
+              margin-top: 0;
+              padding-top: 50px;
+              margin-bottom: 0;
+          }
+          .method{
+              {#padding-bottom: 15px;#}
+              padding-left: 15px;
+              margin-right: 20px;
+              padding-right: 20px;
+          }
+          .selection{
+
+          }
+        #close{
+            text-align: right;
+            margin-right: 0;
+            position: fixed;
+            right: 0;
+        }
+          .select-inner{
+              margin-left: 30px;
+          }
+          .select-inner strong{
+              padding-right: 10px;
+          }
+          .record-path{
+              max-width: 300px;
+              white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+          }
+      </style>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+      <div class="container">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">BingoProxy</a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                  <li><a href="/settings" target="_blank">系统设置</a></li>
+                  <li><a href="https://github.com/tonchengbin" target="_blank">帮助</a></li>
+              </ul>
+              <form class="navbar-form navbar-right" action='/q?'></form>
+          </div>
+      </div>
+  </nav>
+<div>
+    <table class="table table-striped" cellspacing="0" width="100%">
+        <thead>
+          <tr>
+              <th>ID</th>
+              <th>HOST</th>
+              <th class="record-path">PATH</th>
+              <th>Method</th>>
+              <th>Status</th>
+              <th>content-type</th>
+              <th>start</th>
+          </tr>
+          </thead>
+          <tbody>
+          {% for record in records %}
+              <tr >
+                  <td><a href="/r?id={{record.0}}" target="_blank">#{{record.0}}</a></td>
+                  <td>{{record.4 | truncate(40, True)}}</td>
+                  <td class="record-path">{{record.5}}</td>
+                  <td>{{record.2}}</td>
+                  <!--状态样式-->
+                  {% if record.3 == 200 %}
+                      <td style="color: #2FD000;">{{record.3}}</td>
+                      {% elif record.3 == 404 %}
+                      <td style="color: #EA2020;">{{record.3}}</td>
+                  {% else %}
+                      <td>{{record.3}}</td>
+                  {% endif %}
+                  <td>{{ record.6 }}</td>
+                  <td>{{record.11}}</td>
+                  <td>
+                      <a class="btn btn-default btn-xs record"  data-id="{{ record.0 }}">查看</a>
+                      <a action="delrecord" class="btn btn-danger btn-xs" data-id={{record.0}} role="button">删除</a>
+                  </td>
+              </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+</div>
+<div id="ajax-data" class="views hidden">
+    <div class="container">
+        <div>
+            <div><a class="method btn btn-primary" id="btn-req">Request</a><a class="method btn btn-success" id="btn-res">Response</a><a  class="btn btn-danger" id="btn-close">关闭</a></div>
+            <div id="reqdata" class="hidden">
+                <div class="section">
+                    <h4>General</h4>
+                    <div class="select-inner">
+                        <div><strong>Method:</strong><span data-type="method"></span></div>
+                        <div><strong>Url:</strong><span data-type="url"></span></div>
+                        <div><strong>Portocol:</strong><span data-type="Portocol"></span></div>
+                    </div>
+                </div>
+                <div clas="selection">
+                    <h4>Headers</h4>
+                    <div id="req_headers" class="select-inner"></div>
+                </div>
+                <div class="selection">
+                    <h4>Cookie</h4>
+                    <div>NO cookie</div>
+                </div>
+                <div class="selection">
+                    <h4>Body</h4>
+                    <div></div>
+                </div>
+            </div>
+            <div id="resdata" class="hidden">
+                <div class="section"></div>
+                <div clas="selection">
+                       <h4>Headers</h4>
+                    <div id="res_headers" class="select-inner"></div>
+                </div>
+                <div class="selection">
+                    NO cookie
+                </div>
+                <div class="selection">
+                    body
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <script type="text/javascript">
+      //btn  click  request response
+      $('#btn-req').click(function () {
+          $("#reqdata").removeClass("hidden");
+          $("#resdata").addClass("hidden");
+      });
+      $('#btn-res').click(function () {
+          $("#resdata").removeClass("hidden");
+          $("#reqdata").addClass("hidden");
+      });
+      $("#btn-close").click(function () {
+          $("#ajax-data").addClass("hidden")
+      });
+
+      String.prototype.format = function(args) {
+        var result = this;
+        if (arguments.length > 0) {
+            if (arguments.length == 1 && typeof (args) == "object") {
+                for (var key in args) {
+                    if(args[key]!=undefined){
+                        var reg = new RegExp("({" + key + "})", "g");
+                        result = result.replace(reg, args[key]);
+                    }
+                }
+            }
+            else {
+                for (var i = 0; i < arguments.length; i++) {
+                    if (arguments[i] != undefined) {
+                        var reg= new RegExp("({)" + i + "(})", "g");
+                        result = result.replace(reg, arguments[i]);
+                    }
+                }
+            }
+        }
+        return result;
+    };
+      function renderheaders(data){
+          //加载 headers
+          headers=JSON.parse(data['request_headers']);
+          $('#req_headers').html('');
+          for (var key in headers) {
+              console.log(key)
+            var ht_content='<div><strong>{0}:</strong><span data-type="{0}">{1}</span></div>'.format(key,headers[key]);
+              $('#req_headers').append(ht_content);
+            }
+          headers=JSON.parse(data['response_headers']);
+          $('#res_headers').html('');
+          for (var key in headers) {
+              var ht_content='<div><strong>{0}:</strong><span data-type="{0}">{1}</span></div>'.format(key,headers[key]);
+              $('#res_headers').append(ht_content);
+            }
+      }
+      function  rendercookies(headers){
+          {#cookies=headers['cookie']#}
+          {#if(cookies){#}
+              //加载cookie
+              {#console.log("cookie")#}
+
+
+      }
+      function renderbody(data) {
+          //加载body  判断类型
+          content_type=data['content_type'];
+          content=data['content'];
+      }
+      $('.record').click(function () {
+          var obj = $(this).attr('data-id');
+          $.ajax({
+              url :'',
+              dataType:'json',
+              method:'post',
+              data:{'obj':obj,"action":'get_record'},
+              success:function (data) {
+                  $("#ajax-data").removeClass('hidden');
+                  $("#reqdata").removeClass("hidden");
+                  console.log(data['request_headers']);
+                  $('[data-type="method"]').text(data['data']['method']);
+                  $('[data-type="url"]').text(data['data']['url']);
+                  $('[data-type="status_code"]').text(data['data']['status_code']);
+                  renderheaders(data['data']);
+                  {#rendercookies(data['headers']);#}
+                  {#renderbody(data);#}
+              }
+          })
+      });
+      //删除记录
+      $('[action="delrecord"]').click(function () {
+          var tag=$(this).parent().parent();
+          var obj=$(this).attr('data-id');
+          var action="delrecord";
+          $.ajax({
+              url :'',
+              dataType:'json',
+              method:'post',
+              data:{'obj':obj,"action":action},
+              success:function (data) {
+                 if(data['status']){
+                     tag.remove()
+                 }
+              }
+          })
+
+
+      })
+
+
+  </script>
+</body>
+</html>

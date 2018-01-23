@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+    <title>系统设置</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+      <link href="/static/css/bootstrap-datetimepicker.min.css">
+
+      <style>
+          .ctype-list{
+              margin-left: 20px;
+          }
+          footer{
+              margin-left: 20px;
+          }
+          .heler{
+
+          }
+      </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">BingoProxy</a>
+        </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="/settings">系统设置</a></li>
+                <li><a href="https://github.com/rtongchengbin" target="_blank">帮助</a></li>
+            </ul>
+            <form class="navbar-form navbar-right" action='/q?'>
+                <div class="form-group">
+                    <input type="text" placeholder="host:qq.com port:80,443 status:200" name='s' class="form-control" style="width: 320px">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+        </div>
+      </div>
+  </nav>
+  <div class="container">
+      <div class="panel panel-default">
+          <div class="panel-heading">监听方式</div>
+          <div class="panel-body">
+              <input type="text" name="nowtype" class="hidden" value="{{ monitor_type }}">
+              <button data="all" type="button" class="monitor-type btn btn-default"><span class="glyphicon glyphicon-off"></span>全部监听</button>
+              <button data="content-type" type="button" class="monitor-type btn btn-default"><span class="glyphicon glyphicon-ok-circle"></span>指定文件类型</button>
+              <button data="matching" type="button" class="monitor-type btn btn-default"><span class="glyphicon glyphicon-refresh"></span>指定匹配URL</button>
+              <button data="no" type="button" class="monitor-type btn btn-default"><span class="glyphicon glyphicon-refresh"></span>停止监听</button>
+          </div>
+      </div>
+      <div class="panel panel-default">
+          <form method="post" action="">
+              <div class="panel-heading">
+                  <button type="button" class="btn btn-default">文件类型:</button>
+                  <input type="text" name='ctype' value="">
+                  <input id="addtype" type="button" class="" name="" value="添加">
+                  <span  class="heler glyphicon glyphicon-exclamation-sign" onfocus=""></span>
+              </div>
+              <div class="panel-body">
+            <ul class="list-group ctype-list">
+                {% for ctype in alltype %}
+                    <li class="content-type">{{ ctype }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+              <div class="panel-heading">
+                  <button type="button" class="btn btn-default">监听URL:</button>
+                  <input  type="text" name='url' value="">
+                  <input id="addurl" type="button" class="" name="" value="添加">
+                  <span  class="heler glyphicon glyphicon-exclamation-sign" onfocus=""></span>
+              </div>
+              <div class="panel-body">
+                  <ul class="list-group ctype-list">
+                      {% for url in monitor_url %}
+                          <li data="{{ url }}" class="monitor-url">{{ url }}</li>
+                      {% endfor %}
+                  </ul>
+              </div>
+          </form>
+          <form method="post" action="">
+              <!--删除记录-->
+{#              <input class="datetime" type="date" value="">#}
+          </form>
+          <footer class="footer">
+              <p>&copy; tongchengbin.github.io</p>
+          </footer>
+      </div>
+  </div>
+
+
+  <script src="/static/js/jquery.min.js"></script>
+  <script src="/static/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    window.onload=function(){
+        var nowtype=$('[name="nowtype"]').val();
+        $('[data='+nowtype+']').addClass('btn-info')
+    };
+    //添加监听类型
+    $('#addtype').click(function () {
+          var obj=$('[name="ctype"]').val();
+          console.log(obj);
+          $.ajax({
+              url :'',
+              dataType:'json',
+              method:'post',
+              data:{'obj':obj,"action":'addtype'},
+              success:function (data) {
+                    location.reload()
+              }
+          })
+      });
+    //删除监听类型
+    $('.content-type').click(function(){
+        var obj=$(this).text();
+        console.log(obj);
+        $.ajax({
+              url :'',
+              dataType:'json',
+              method:'post',
+              data:{'obj':obj,"action":'deltype'},
+              success:function (data) {
+                location.reload()
+              }
+          })
+
+});
+    //修改监听方式
+    $('.monitor-type').click(function (){
+        var obj=$(this).attr('data');
+        var action="changemonitor";
+        $.ajax({
+            url:'',
+            method:'post',
+            dataType:'json',
+            data:{"obj":obj,'action':action},
+            success:function(data){
+                location.reload()
+            }
+        })
+    });
+    //添加监听url
+     $('#addurl').click(function () {
+        var obj=$('[name="url"]').val();
+        var action="addurl";
+        $.ajax({
+            url:'',
+            method:'post',
+            dataType:'json',
+            data:{"obj":obj,'action':action},
+            success:function(data){
+                location.reload()
+            }
+        })
+    });
+    //删除监听url
+     $('.monitor-url').click(function () {
+        var obj=$(this).attr('data');
+        var action="delurl";
+        $.ajax({
+            url:'',
+            method:'post',
+            dataType:'json',
+            data:{"obj":obj,'action':action},
+            success:function(data){
+                location.reload()
+            }
+        })
+    })
+</script>
+</body>
+</html>
