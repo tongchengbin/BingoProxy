@@ -1,0 +1,14 @@
+
+
+flow.request
+
+['__abstractmethods__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_get_content_type_charset', '_get_cookies', '_get_multipart_form', '_get_query', '_get_urlencoded_form', '_guess_encoding', '_parse_host_header', '_set_cookies', '_set_multipart_form', '_set_query', '_set_urlencoded_form', 'anticache', 'anticomp', 'constrain_encoding', 'content', 'cookies', 'copy', 'data', 'decode', 'encode', 'first_line_format', 'from_state', 'get_content', 'get_state', 'get_text', 'headers', 'host', 'host_header', 'http_version', 'is_replay', 'method', 'multipart_form', 'path', 'path_components', 'port', 'pretty_host', 'pretty_url', 'query', 'raw_content', 'replace', 'scheme', 'set_content', 'set_state', 'set_text', 'stream', 'text', 'timestamp_end', 'timestamp_start', 'url', 'urlencoded_form', 'wrap']
+
+
+flow.response
+
+['__abstractmethods__', '__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_get_content_type_charset', '_get_cookies', '_guess_encoding', '_set_cookies', 'content', 'cookies', 'copy', 'data', 'decode', 'encode', 'from_state', 'get_content', 'get_state', 'get_text', 'headers', 'http_version', 'is_replay', 'make', 'raw_content', 'reason', 'refresh', 'replace', 'set_content', 'set_state', 'set_text', 'status_code', 'stream', 'text', 'timestamp_end', 'timestamp_start', 'wrap']
+
+
+<class 'mitmproxy.net.http.headers.Headers'>
+['_MutableMapping__marker', '__abstractmethods__', '__bytes__', '__class__', '__contains__', '__delattr__', '__delitem__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__', '__len__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__reversed__', '__setattr__', '__setitem__', '__sizeof__', '__slots__', '__str__', '__subclasshook__', '__weakref__', '_abc_cache', '_abc_negative_cache', '_abc_negative_cache_version', '_abc_registry', '_kconv', '_reduce_values', 'add', 'clear', 'collect', 'copy', 'fields', 'from_state', 'get', 'get_all', 'get_state', 'insert', 'items', 'keys', 'pop', 'popitem', 'replace', 'set_all', 'set_state', 'setdefault', 'update', 'values']
