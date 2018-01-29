@@ -30,7 +30,6 @@
               padding-right: 20px;
           }
           .selection{
-
           }
         #close{
             text-align: right;
@@ -135,7 +134,7 @@
                 </div>
                 <div class="selection">
                     <h4>Body</h4>
-                    <div></div>
+                    <div class="req_content"></div>
                 </div>
             </div>
             <div id="resdata" class="hidden">
@@ -147,9 +146,10 @@
                 <div class="selection">
                     NO cookie
                 </div>
-                <div class="selection">
+                <h4 class="">
                     body
-                </div>
+                </h4>
+                <div class="res_content"></div>
             </div>
         </div>
     </div>
@@ -169,7 +169,6 @@
       $("#btn-close").click(function () {
           $("#ajax-data").addClass("hidden")
       });
-
       String.prototype.format = function(args) {
         var result = this;
         if (arguments.length > 0) {
@@ -213,13 +212,11 @@
           {#if(cookies){#}
               //加载cookie
               {#console.log("cookie")#}
-
-
       }
       function renderbody(data) {
           //加载body  判断类型
-          content_type=data['content_type'];
-          content=data['content'];
+          $('.req_content').text(data['data']['request_content']);
+          $('.res_content').text(data['data']['response_content']);
       }
       $('.record').click(function () {
           var obj = $(this).attr('data-id');
@@ -237,7 +234,7 @@
                   $('[data-type="status_code"]').text(data['data']['status_code']);
                   renderheaders(data['data']);
                   {#rendercookies(data['headers']);#}
-                  {#renderbody(data);#}
+                  renderbody(data);
               }
           })
       });
@@ -257,11 +254,7 @@
                  }
               }
           })
-
-
       })
-
-
   </script>
 </body>
 </html>

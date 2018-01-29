@@ -1,0 +1,1786 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    isMobile();
+    function isMobile(){
+        if(navigator.userAgent.match(/(iPhone|iPod|Android|ios)/i)!=null){
+            var url = location.search;
+            if (url.indexOf("itemId") != -1){
+                location.href="//m.i360mall.com/item.html"+url;
+            } else {
+                location.href="//m.i360mall.com/";
+            }
+        }
+    }
+    var _staticDomain='//static.i360mall.com';
+    var _mallDomain='//i360mall.com';
+    var _staticVersion='0.0.14';
+</script>
+<meta http-equiv="X-UA-Compatible" content="edge"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="Keywords" content="360商城，智能硬件，免费试用，智能家居，智能手表，智能家电"/>
+<meta name="Description" content="360商城是一家智能硬件体验平台。这里能免费试用智能硬件，查看全方位试用报告，还可以预约、抢购并体验新上市的智能产品。"/>
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<title>360商城</title>
+<link rel="shortcut icon"href="//static.i360mall.com/mall/images/favicon.ico">
+<script src="//static.i360mall.com/mall/js/common/jquery-1.12.4.min.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/index/jsstorage.js?v=0.0.14"></script>
+<!-- new index -->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://s.ssl.qhmsg.com/static/c3c3cb852a8db688/htmlshiv.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="//static.i360mall.com/mall/css/qikoo-v.css?v=0.0.14"/>
+<link rel="stylesheet" href="//static.i360mall.com/mall/css/index/idangerous.swiper2.7.6.css?v=0.0.14">
+<link rel="stylesheet" href="//static.i360mall.com/mall/css/index/index-new-header.css?v=0.0.14">
+
+
+<script src="//static.i360mall.com/mall/js/common/jquery.jsonp-2.4.0.min.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/index/index.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/common/common.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/index/index_common.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/idangerous.swiper2.7.6.min.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/common/jquery.cookie.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/search_v1.js?v=0.0.14"></script>
+
+<script>
+    $(function(){indexPage.init()})
+</script>
+<!-- commonHeaderFragment2.vmt.vm end-->
+
+    
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-93824329-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+</head>
+<body id="body">
+    
+    <div class="mod-header">
+    <!-- 吸顶广告 -->
+    <div class="topadbox1">
+        <div class="adimgbox">
+                            <div class="adimgclosebtn" style="display: none;">
+                    <img src="//static.i360mall.com/mall/images/closetip.png" style="width: 15px;height: 15px;">
+                </div>
+                <div class="top_img_box"   style="width: 100%; height: 0px; background: url('//img.i360mall.com/bc1b99eb-7a5c-4514-b9bc-f158bf2e7c06.jpg') 0 0 no-repeat" >
+                    <a href="//i360mall.com/act/shFJiSWQwy.html" target="_blank" clstag="pageclick|keycount|360PC_201708188|1" onclick="ga('send', 'event', 'head', 'click', 'head_ad');">
+                        <img class="top_ad_" src="//img.i360mall.com/bebfe367-9464-4d49-9cd9-b1ebb03eba6f.jpg" style="width: 100%; height: 80px;display: none;">
+                    </a>
+                </div>
+                    </div>
+    </div>
+    <!-- 吸顶广告end -->
+    <!--零导航 start-->
+    <div class="topbox" id="gotop">
+        <div class="top-container">
+            <ul>
+            
+                <li class="topbox-item leftitem">
+                    <a data-monitor="home_top_help" target="_blank" href="//i360mall.com/help/home" onclick="ga('send', 'event', 'head', 'click', 'head_帮助中心');">帮助中心</a>
+                </li>
+                <li class="topbox-item leftitem">
+                    <a data-monitor="home_top_collect" class="js-connect" href="javascript:;" onclick="ga('send', 'event', 'head', 'click', 'head_收藏本站');">收藏本站</a>
+                </li>
+            
+                <li class="topbox-item rightitem codebtn">
+                    <a data-monitor="home_top_app" target="_blank" href="//i360mall.com/help/download" class="telshop"><i></i>手机360商城</a>
+                    <div class="codebox">
+                        <table>
+                            <tr>
+                                <td>
+                                    <div class="codeimgbox">
+                                        <!-- 二维码图片 -->
+                                        <img src="//static.i360mall.com/mall/images/qcode_app.jpg">
+                                    </div>
+                                </td>
+                                <td class="codecontbox">
+                                    <p class="codetit">手机360商城</p>
+                                    <p class="codecont">扫码下载</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </li>
+                <li class="topbox-item rightitem" style="margin-right:-10px;">
+                    <a data-monitor='home_top_order' href="//buyer.i360mall.com/user/myorder" target="_blank"
+                       onclick="ga('send', 'event', 'head', 'click', 'head_我的订单');">我的订单</a>
+                </li>
+            
+                <li class="topbox-item rightitem navloginbox">
+                    <div class="loginbefore nloginWrap">
+                        <a class="btn-login-pop" href="//passport.i360mall.com/user360/login" data-monitor="home_top_login"
+                           onclick="ga('send', 'event', 'head', 'click', 'head_登录');">登录</a>
+                        <a class="btn-reg-pop" href="https://i.360.cn/reg" data-monitor="home_top_registe"
+                           onclick="ga('send', 'event', 'head', 'click', 'head_注册');">注册</a>
+                    </div>
+                    <div class="loginafter loginWrap" style="display:none;">
+                        <span class="top-uname popUsername">admin</span>
+                        <div class="popbox">
+                            <a class="top-uname popUsername" href="//buyer.i360mall.com/user/myorder" target="_blank"
+                               data-monitor='home_top_user'>admin</a>
+                            <ul class="topuserbox">
+                                <li>
+                                    <a href="//buyer.i360mall.com/user/myorder" target="_blank" data-monitor='home_top_myorder'
+                                       onclick="ga('send', 'event', 'head', 'click', 'head_我的订单');">我的订单</a>
+                                </li>
+                                <li>
+                                    <a href="//buyer.i360mall.com/user/mycoupon" target="_blank" data-monitor='home_top_mycoupon'>我的优惠券</a>
+                                </li>
+                                <li>
+                                    <a href="//buyer.i360mall.com/user/myfavorite" target="_blank" data-monitor='home_top_myfavorite'>我的喜欢</a>
+                                </li>
+                                <li>
+                                    <a href="//buyer.i360mall.com/user/mybespeak" target="_blank" data-monitor='home_top_book'>我的预约</a>
+                                </li>
+                                <li>
+                                    <a href="//buyer.i360mall.com/user/mylottery" target="_blank">我的奖品</a>
+                                </li>
+                                <li>
+                                    <a href="//buyer.i360mall.com/userAddress/show" target="_blank" data-monitor='home_top_address'>收货地址</a>
+                                </li>
+                                <li>
+                                    <a href="//i.360.cn/" target="_blank" data-monitor='home_top_set'>账号设置</a>
+                                </li>
+                                <li>
+                                    <a class="btn-logout-pop" href="javascript:;" onclick="logout()" data-monitor='home_top_out'>退出登录</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--零导航 end-->
+    <div class="top-container">
+        <!--logo start-->
+        <div class="header-logo">
+            <a class="sellogo" href="//i360mall.com" data-monitor="home_title_logo">
+                <img src="//img.i360mall.com/e99e333b-d3c0-4673-b86e-2ed6377a6972.png">
+            </a>
+            <!-- logo广告 -->
+                    </div>
+        <!--logo end-->
+        <div class="header-tools">
+            <!--搜索框 start-->
+            <div class="suggest-box">
+                <form autocomplete="off" id="__mall_search_form__" onsubmit="return check_search_val(this);"  action="//i360mall.com/search/" method="get">
+                    <input type="text"  placeholder=""  data="" value="" id="__mall_search_kw__" autocomplete="off" class="suggest" name="q"/>
+                    <input type="submit" value="" class="search-btn" id="__mall_search_btn__" data-monitor="home_search_button" onclick="ga('send', 'event', 'head', 'search', 'head_search');"/>
+                </form>
+                <p class="searchkey"></p>
+                <ul id="search-suggest-1487228989195" class="__mall_suggest__" ></ul>
+            </div>
+            <!--搜索框 end-->
+            <!--购物车 start-->
+            <div class="topshopcart">
+                <a href="//trade.i360mall.com/cart" target="_blank" class="header-cart" data-monitor="home_title_shopcart" style="z-index:100001"><i class="icon"></i>我的购物车<span class="cart-size">(0)</span></a>
+                <div class="header-cart-popup pop-show-tip" style="display: none;">
+                    <div class="cart-tips">请 <a class="tip-login" href="#" onclick="return false;" data-monitor="home_title_shopcartlogin">登录</a> 后查看您的购物车。</div>
+                    <div class="cart-info">
+                        <ul class="cart-list">
+                        </ul>
+                        <div class="cart-count" style="display: none">
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--购物车 end-->
+        </div>
+    </div>
+    <div class="navbox">
+        <div class="top-container">
+            <!-- 频道广告 -->
+                        <!-- 频道下拉 -->
+                                        <div class="sublistbox sublistbox1" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5782069" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t11089/67/2744083331/68075/b567bf6/5a1d025aNc42009ef.jpg" class="js-lazyload" >
+                                    <span title="360手机 N6 Pro">360手机 N6 Pro</span>
+                                                                            <i data-skuid="5782069" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5924737" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t15301/211/236290404/115390/93709168/5a27b7e0Ndbdb69bb.jpg" class="js-lazyload" >
+                                    <span title=" N6 Lite璀璨金色 "> N6 Lite璀璨金色 </span>
+                                                                            <i data-skuid="5924737" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5097348" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t5860/31/1435315325/195398/ba8744bf/59264e07N797a8757.jpg" class="js-lazyload" >
+                                    <span title="360手机 N5S 全网通 6GB">360手机 N5S 全网通 6GB</span>
+                                                                            <i data-skuid="5097348" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5924739" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t16282/244/273805015/190981/8cb1c4d6/5a2f804cN633124ba.jpg" class="js-lazyload" >
+                                    <span title=" N6  璀璨金色  "> N6  璀璨金色  </span>
+                                                                            <i data-skuid="5924739" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4803445" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t7189/341/2321250693/118850/9542af4d/5995159dNfe856870.jpg" class="js-lazyload" >
+                                    <span title="360手机 C5移动版">360手机 C5移动版</span>
+                                                                            <i data-skuid="4803445" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4541614" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img14.360buyimg.com/N1/jfs/t6604/94/515233933/154199/7de5627c/5940dd2cN9225de72.jpg" class="js-lazyload" >
+                                    <span title=" F4S 流光金 3GB 32GB"> F4S 流光金 3GB 32GB</span>
+                                                                            <i data-skuid="4541614" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox2" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5512070" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t9385/313/1883487847/126523/893828b7/59c0de0bNb6b31208.jpg" class="js-lazyload" >
+                                    <span title="行车记录仪智能后视镜导航云镜 S650 ">行车记录仪智能后视镜导航云镜 S650 </span>
+                                                                            <i data-skuid="5512070" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5059572" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t6016/174/1173050689/105522/8ef291af/5930c9a1N050ba6c5.jpg" class="js-lazyload" >
+                                    <span title="M302 高清夜视 前后双录 ">M302 高清夜视 前后双录 </span>
+                                                                            <i data-skuid="5059572" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4021677" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t2803/225/2369244403/272133/b5aeb8d9/57621511N5cbafb8a.jpg" class="js-lazyload" >
+                                    <span title="二代 美猴王版">二代 美猴王版</span>
+                                                                            <i data-skuid="4021677" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4740102" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t3808/364/2141939536/174960/f1f94a87/5850bf66N72536de6.jpg" class="js-lazyload" >
+                                    <span title="360行车记录仪尊享升级版 ">360行车记录仪尊享升级版 </span>
+                                                                            <i data-skuid="4740102" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5059606" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t5254/41/1645013676/43557/a6917195/5912ca22Ne1ee1050.jpg" class="js-lazyload" >
+                                    <span title="360 胎压监测仪 JP703 ">360 胎压监测仪 JP703 </span>
+                                                                            <i data-skuid="5059606" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4740100" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t3307/281/8750062970/172269/602f3a2f/58ca413dN90d3345d.jpg" class="js-lazyload" >
+                                    <span title="360行车记录仪套装升级版">360行车记录仪套装升级版</span>
+                                                                            <i data-skuid="4740100" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox3" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5338192" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t6898/111/1370543299/176515/85082d7f/598056eeN583c8ea5.jpg" class="js-lazyload" >
+                                    <span title="360儿童手表6C">360儿童手表6C</span>
+                                                                            <i data-skuid="5338192" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5305080" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t5875/263/7148209312/175329/6a48e717/596f324fN0b6cf39a.jpg" class="js-lazyload" >
+                                    <span title="360儿童手表6W防水版 ">360儿童手表6W防水版 </span>
+                                                                            <i data-skuid="5305080" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4839500" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t4603/84/2391835328/142878/1087c9e2/58eefd8fNbd14e4a1.jpg" class="js-lazyload" >
+                                    <span title="360儿童手表SE 2 Plus ">360儿童手表SE 2 Plus </span>
+                                                                            <i data-skuid="4839500" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4839496" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t4993/82/1266372763/90759/7f7dab13/58eefdeaN8c667b63.jpg" class="js-lazyload" >
+                                    <span title="360儿童电话手表SE 2代 ">360儿童电话手表SE 2代 </span>
+                                                                            <i data-skuid="4839496" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4026301" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t3325/45/2264649704/92573/b6648294/5850b01cNa082fcc9.jpg" class="js-lazyload" >
+                                    <span title="360亲情手表 老人手表">360亲情手表 老人手表</span>
+                                                                            <i data-skuid="4026301" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4682551" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t5785/159/9604521209/89023/9c880ad3/5988353cN95af8a48.jpg" class="js-lazyload" >
+                                    <span title="360儿童手表C系列表带 巴迪粉">360儿童手表C系列表带 巴迪粉</span>
+                                                                            <i data-skuid="4682551" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox4" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4520653" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t5767/130/5926234876/77602/68b740d5/5966da63N242d73f6.jpg" class="js-lazyload" >
+                                    <span title="360 智能摄像机 云台版 ">360 智能摄像机 云台版 </span>
+                                                                            <i data-skuid="4520653" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5123404" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t5344/234/1641938465/57261/1157bab7/5912dc82N60a0af85.jpg" class="js-lazyload" >
+                                    <span title="360智能摄像机防水版  D621 ">360智能摄像机防水版  D621 </span>
+                                                                            <i data-skuid="5123404" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4016559" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t3874/174/1090299175/177735/e5eb0f46/586b6e3dN43709259.jpg" class="js-lazyload" >
+                                    <span title="360智能摄像机 看店宝 D688 ">360智能摄像机 看店宝 D688 </span>
+                                                                            <i data-skuid="4016559" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4730132" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t3709/7/1211282327/76333/be5ff261/5820472aNb07e06e0.jpg" class="js-lazyload" >
+                                    <span title="360智能摄像机悬浮1080P版 ">360智能摄像机悬浮1080P版 </span>
+                                                                            <i data-skuid="4730132" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4730124" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t2383/195/2950636224/74215/7007dea5/571f36f6N1f0791f5.jpg" class="js-lazyload" >
+                                    <span title="360智能摄像机1080P版 D606 ">360智能摄像机1080P版 D606 </span>
+                                                                            <i data-skuid="4730124" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4730144" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t3547/262/2798701267/74986/eac9d3f0/585d4d50N41ecf8b7.jpg" class="js-lazyload" >
+                                    <span title="360智能摄像机夜视版Plus ">360智能摄像机夜视版Plus </span>
+                                                                            <i data-skuid="4730144" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox5" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5544624" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t9058/362/1827887644/54225/d3f7655c/59c07355Na25c11d4.jpg" class="js-lazyload" >
+                                    <span title="360安全路由P4">360安全路由P4</span>
+                                                                            <i data-skuid="5544624" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4130297" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t4786/356/2537318510/94806/cc5cd229/5901982dNf1ff3940.jpg" class="js-lazyload" >
+                                    <span title="360安全路由器P3 ">360安全路由器P3 </span>
+                                                                            <i data-skuid="4130297" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5394435" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t8767/363/1367328134/59032/2e222026/59c07315N7dccb957.jpg" class="js-lazyload" >
+                                    <span title="360安全路由P2">360安全路由P2</span>
+                                                                            <i data-skuid="5394435" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4757328" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img13.360buyimg.com/N1/jfs/t5068/53/1433469930/90564/1f8e89cd/58f099acN256e71e7.jpg" class="js-lazyload" >
+                                    <span title="360安全路由器P1 ">360安全路由器P1 </span>
+                                                                            <i data-skuid="4757328" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4757330" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t2422/236/1726016346/135233/14fe94d2/567248b2N7d3e30e0.jpg" class="js-lazyload" >
+                                    <span title="360路由器P1 天际蓝">360路由器P1 天际蓝</span>
+                                                                            <i data-skuid="4757330" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4757324" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t4861/183/1435080673/113777/dece9e09/58f09942N18a729a0.jpg" class="js-lazyload" >
+                                    <span title="360WiFi扩展器 wifi信号放大器">360WiFi扩展器 wifi信号放大器</span>
+                                                                            <i data-skuid="4757324" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox6" style="display: none;">
+                    <ul class="sub-nav-list">
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4210733" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t3976/215/1339482911/60488/7398de80/58733702N1959633d.jpg" class="js-lazyload" >
+                                    <span title="iPhone6s Plus ">iPhone6s Plus </span>
+                                                                            <i data-skuid="4210733" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4210725" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img11.360buyimg.com/N1/jfs/t3217/183/5500793958/85906/1c92644f/58735347Nd0d7309c.jpg" class="js-lazyload" >
+                                    <span title="iPhone6 苹果6手机 金色 16G">iPhone6 苹果6手机 金色 16G</span>
+                                                                            <i data-skuid="4210725" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5118466" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t4081/297/1355800858/59437/781377f0/5873583dN354818a2.jpg" class="js-lazyload" >
+                                    <span title="99新 iPhone6s 金色 64G">99新 iPhone6s 金色 64G</span>
+                                                                            <i data-skuid="5118466" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=4210703" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img12.360buyimg.com/N1/jfs/t3949/295/1303399169/85906/1c92644f/587362f0N85c77ab8.jpg" class="js-lazyload" >
+                                    <span title="99新  iPhone6 ">99新  iPhone6 </span>
+                                                                            <i data-skuid="4210703" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                                    <li>
+                                <a href="//i360mall.com/shop/item?itemId=5118430" target="_blank"
+                                   data-monitor="home_title_goods1v1">
+                                    <img src="//static.i360mall.com/mall/images/default_img.jpg" data-original="//img10.360buyimg.com/N1/jfs/t3271/316/5553222489/86280/151240ff/58733de6N3846e1dd.jpg" class="js-lazyload" >
+                                    <span title="9成新  iPhone6s">9成新  iPhone6s</span>
+                                                                            <i data-skuid="5118430" data-price="y">
+                                        
+                                        </i>
+                                                                    </a>
+                            </li>
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox7" style="display: none;">
+                    <ul class="sub-nav-list">
+                                            </ul>
+                </div>
+                            <div class="sublistbox sublistbox8" style="display: none;">
+                    <ul class="sub-nav-list">
+                                            </ul>
+                </div>
+                        <ul class="navbar column-list clearfix">
+                <li class="top-item topfirst">
+                    <a data-monitor='home_fenlei_allgoods' href="//i360mall.com">全部智能酷品</a>
+                </li>
+                                                                                                                                                                                    <li class="top-item  xian "  data-type="1"
+                         clstag="pageclick|keycount|360PC_201708188|8"  >
+                        <a  href="//i360mall.com/search?cat3=149"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类1');">手机</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item  xian "  data-type="2"
+                         clstag="pageclick|keycount|360PC_201708188|9"  >
+                        <a  href="http://i360mall.com/search?cat3=156"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类2');">行车记录仪</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item  xian "  data-type="3"
+                         clstag="pageclick|keycount|360PC_201708188|10"  >
+                        <a  href="http://i360mall.com/search?cat3=155"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类3');">儿童手表</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item  xian "  data-type="4"
+                         clstag="pageclick|keycount|360PC_201708188|11"  >
+                        <a  href="http://i360mall.com/search?cat3=157"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类4');">摄像机</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item  xian "  data-type="5"
+                         clstag="pageclick|keycount|360PC_201708188|12"  >
+                        <a  href="//i360mall.com/search?cat3=581&q=&sort=&sort3=&brand=&state=&shopId="  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类5');">路由器</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item  xian "  data-type="6"
+                         clstag="pageclick|keycount|360PC_201708188|13"  >
+                        <a  href="http://i360mall.com/search?cat2=507"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类6');">二手手机</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item "  data-type="7"
+                         clstag="pageclick|keycount|360PC_201708188|14"  >
+                        <a  href="http://bbs.360.cn/"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类7');">社区</a>
+                    </li>
+                                                                                                                                                                    <li class="top-item "  data-type="8"
+                         clstag="pageclick|keycount|360PC_201708188|15"  >
+                        <a  href="//try.bbs.360.cn/welfare#right"  data-monitor='home_title_goods1'
+                            onclick="ga('send', 'event', 'head', 'click', 'head_menu_分类8');">游戏权益中心</a>
+                    </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- 价格初始化 -->
+<script>
+    $(function(){
+        priceOperation(mall_price.init_price);
+    })
+</script>
+<!-- commonHeader_old.vmr.vm end-->
+
+        <link rel="stylesheet" href="//static.i360mall.com/mall/css/store.css?v=0.0.26"/>
+<link rel="stylesheet" href="//static.i360mall.com/mall/css/search.css?v=0.0.26"/>
+<link rel="stylesheet" href="//static.i360mall.com/mall/css/list.css?v=0.0.26"/>
+
+
+<style type="text/css">
+    .summary-stock {
+        padding-bottom: 5px;
+        margin-bottom: 15px;
+        border-bottom: 1px dotted #dfdfdf;
+        margin-top: 1px;
+
+    }
+    .summary-stock:after{display:block;clear:both;content:"";visibility:hidden;height:0;}
+    .prodIntro .sInfo .tr p.coupon {
+        padding: 10px 0;
+        line-height: 24px;
+        font-size: 14px;
+        color: #e43636;
+        width: 600px;
+        /*max-height: 85px;*/
+        overflow: hidden;
+    }
+    .prodIntro .sInfo .tr p.coupon a {
+        text-decoration: underline;
+        color: #646eb0;
+    }
+
+</style>
+
+<!-- <script src="https://s.ssl.qhmsg.com/lib/jquery/1102.js"></script>
+<script type="text/javascript" src="https://jspassport.ssl.qhimg.com/5.0.3.js"></script> -->
+
+<!--[if lt IE 9]>
+<script type="text/javascript" src="https://s.ssl.qhmsg.com/static/c3c3cb852a8db688/htmlshiv.min.js"></script>
+<![endif]-->
+<script>
+    window.isSupportWebp = false;
+    void function(){
+
+        var webpTestsUri = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=';
+
+        var image = new Image();
+
+        function addResult(event) {
+            // if the event is from 'onload', check the see if the image's width is
+            // 1 pixel (which indiciates support). otherwise, it fails
+
+            window.isSupportWebp = event && event.type === 'load' ? image.width == 1 : false;
+        }
+
+        image.onerror = addResult;
+        image.onload = addResult;
+
+        image.src = webpTestsUri;
+    }();
+    var isItemPreview = false ;
+</script>
+
+<script type="text/javascript">
+    var _isindex = 0;
+</script>
+
+<script id="tpl_nav" type="text/html">
+    <!--导航下拉 start-->
+    <ul class="sub-nav-list">
+        {{each item as secondValue index}}
+        <li>
+            <a href="{{secondValue.url}}" target="_blank" data-monitor='home_title_goods{{id}}v{{index+1}}'>
+                <img src="{{secondValue.pic.indexOf('qhimg') ? secondValue.pic.replace('com/', 'com/dr/132_132_/') : secondValue.pic.indexOf('qhimg')}}" />
+                <span>{{secondValue.name}}</span>
+                <i>{{secondValue.price_sale}}元</i>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<div class="gdetail">
+    <div class="prodIntro">
+        <div class="sPic">
+            <dl class="picbox">
+                <dt class="bigImg">
+                <div style="display:none;" id="winSelector"></div>
+                  <img src="//img13.360buyimg.com/N1/s450x450_jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg" src-big="//img13.360buyimg.com/N1/s800x800_jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg"/>
+                </dt>
+                <dd class="pic-selector" id="pic-selector">
+                    <i class="left leftdisabled"></i>
+                    <div class="scroll">
+                        <div class="scroll-items">
+                            <!-- <a href="javascript:;" class="tinypic cur"><img src="https://p.ssl.qhmsg.com/t01866b33dbe6edba5c.jpg"></a> -->
+                                                            <a href="javascript:;" class="tinypic">
+                                    <img src="//img13.360buyimg.com/N1/s450x450_jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg" src-big="//img13.360buyimg.com/N1/s800x800_jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg">
+                                </a>
+                                                            <a href="javascript:;" class="tinypic">
+                                    <img src="//img11.360buyimg.com/N1/s450x450_jfs/t3784/7/898016146/196510/3c048e1d/581703c9Nd27d5c7d.jpg" src-big="//img11.360buyimg.com/N1/s800x800_jfs/t3784/7/898016146/196510/3c048e1d/581703c9Nd27d5c7d.jpg">
+                                </a>
+                                                            <a href="javascript:;" class="tinypic">
+                                    <img src="//img10.360buyimg.com/N1/s450x450_jfs/t3700/110/1101146428/247175/17459385/581c4cd8Nc26ad237.jpg" src-big="//img10.360buyimg.com/N1/s800x800_jfs/t3700/110/1101146428/247175/17459385/581c4cd8Nc26ad237.jpg">
+                                </a>
+                                                            <a href="javascript:;" class="tinypic">
+                                    <img src="//img14.360buyimg.com/N1/s450x450_jfs/t3478/326/851543879/180015/988d124d/581703adN7e46fc7b.jpg" src-big="//img14.360buyimg.com/N1/s800x800_jfs/t3478/326/851543879/180015/988d124d/581703adN7e46fc7b.jpg">
+                                </a>
+                                                            <a href="javascript:;" class="tinypic">
+                                    <img src="//img14.360buyimg.com/N1/s450x450_jfs/t3502/273/898023175/103951/ffcd1dc/581703b7N90bb075a.jpg" src-big="//img14.360buyimg.com/N1/s800x800_jfs/t3502/273/898023175/103951/ffcd1dc/581703b7N90bb075a.jpg">
+                                </a>
+                                                    </div>
+                    </div>
+                    <i class="right rightdisabled"></i>
+                </dd>
+            </dl>
+            <div class="favoritebtn" clstag="pageclick|keycount|360PC_201709197|68">收藏</div>
+        </div>
+        <div class="sInfo">
+            <a name="sInfo"></a>
+            <div class="tr nobdr bespeaked">
+                <strong>360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色</strong>
+                <p class="coupon" id="adWord_p"></p>
+                <p class="flashsale" style="display:none;">距离结束<span>01</span>:<span>59</span>:<span>59</span></p>
+                <p class="flashsale_nostart" style="display:none;"></p>
+                <p class="slogan" style="display:none;">更超值的彩屏电话手表</p>
+            </div>
+            <div class="tr nobdr tr1" style="margin-top:10px;">
+                <div class="txt">
+                    <strong class="nowprice">
+                    
+                    </strong>
+                    <strong class="flashprice" style="display: none;"></strong>
+                </div>
+
+                <div class="txt" id="coupons" style="display: none;" data-itemid="4021675" data-venderid="0" data-jcat="6728;6740;6964">
+                    <div class="cate">
+                        <span class="cate-label">领券</span>
+                        <ul class="cate-list couponlist">
+
+                        </ul>
+                    </div>
+                </div>
+                <!--赠品-->
+                <div class="gift" style="display: none;" data-spuid="4740082" data-itemid="4021675" data-venderid="0" data-jcat="6728;6740;6964">
+                    <i class="gift-label">赠品</i>
+                </div>
+
+                <div class="summary-stock">
+                    <span class="ginfo-tit">配送至</span>
+
+                    <div class="g-address">
+                                                                                                                            <span class="m-address-tt"><i></i></span>
+                        <!-- 选三级地址 -->
+                    </div>
+                    <div class="beforehand" style="display: none;">
+                        <p>
+                            <span>预定</span>
+                            预计2017-02-22后有货，现在可下单
+                        </p>
+                    </div>
+                </div>
+
+
+                <!-- <div class="txt"><span>商品评价：</span><span class="product-star"><i class="star-3"></i></span><a href="#" class="lk">已有89人评价</a></div> -->
+                <div class="txt">
+                    <div id="item-cate"></div>
+                </div>
+
+                <div class="txt" id="productNum">
+                    <span style="margin-top:6px;">数量</span>
+                    <div class="gcIpt" data-monitor="goodsdetails_number_click">
+                        <a href="javascript:void(0);" class="decrement disabled" data-num="-1">-</a>
+                        <input type="text" class="goodsCount" value="1"/>
+                        <a href="javascript:void(0);" class="increment" data-num="1">+</a>
+                    </div>
+                </div>
+                                <div class="txt" >
+                    <span>联系客服</span>
+                    <a href="javascript:void(0);" class="chatjd chatjd_dl"></a>
+                </div>
+                <p class="cl mianze"></p>
+            </div>
+            <div class="tr nobdr btns">
+                <a href="javascript:void(0);" style="display: none;" class="gInfoBtn gInfoBtn-addcart addcart-button" data-monitor="goodsdetails_buy_click" clstag="pageclick|keycount|360PC_201709197|67"><span class="gInfoBtn-icon gInfoBtn-icon-cart"></span>加入购物车</a>
+
+                <a href="javascript:void(0);"  class="gInfoBtn gInfoBtn-sellout sellout-button">已售罄</a>
+
+                <a style="display: none;" href="javascript:void(0);" class="gInfoBtn gInfoBtn-sellout offshelf-button">已下架</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak gInfoBtn-begin" style="display: none" id="wiiBespeak">即将开始</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none" id="bespeakNow" clstag="pageclick|keycount|360PC_201709197|65">立即预约</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak gInfoBtn-begin" style="display: none" id="waitToBuy">即将开抢</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none" id="buyNow" clstag="pageclick|keycount|360PC_201709197|66">立即抢购</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none" id="buybuybuy" onclick="SecKill()" clstag ="pageclick|keycount|360PC_201709197|64">抢购</a>
+                <div id="clear" style="clear:both;"></div>
+            </div>
+            <div class="tr nobdr" style="display: none">
+                <div class="txt">
+                    <span>保障</span>
+                    <ul class="guarantee" style="margin-left: 65px;">
+                        <li class="postage_free"><i></i>满99元包邮</li>
+                        <li style="display: none;" class="sales_return"><i></i>7天无理由退货</li>
+                        <li class="sales_replace"><i></i>质量问题15天换货</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bespeakflow" style="display: none">
+        <h4>
+            预约抢购流程
+        </h4>
+        <table>
+            <tbody>
+            <tr>
+                <td><p><span>1.等待预约</span></p></td>
+                <td><p><span>2.预约中</span></p></td>
+                <td><p><span>3.等待抢购</span></p></td>
+                <td><p><span>4.抢购中</span></p></td>
+            </tr>
+            <tr>
+                <td>预约即将开始</td>
+                <td id="bespeakTime"></td>
+                <td>抢购即将开始</td>
+                <td id="panicbuyingTime"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+    <!--/prodIntro-->
+
+    <!-- #region 搭配购 -->
+    <div class="dp_wrap_title">
+        推荐搭配
+    </div>
+    <div class="dp_wrap" style="display: none;">
+        <div class="dq_total_wrap">
+            <div class="icon_equal">=</div>
+            <p class="dp_num">已选择0个配件</p>
+            <p class="dq_price">总计：<span>￥199.00</span>元</p>
+            <div class="dq_addcart">立即购买</div>
+        </div>
+        <div class="dq_ori_prd">
+            <a class="dp_wrap_pimg_ori dp_wrap_pimg"><img src="https://p.ssl.qhmsg.com/t01866b33dbe6edba5c.jpg" /></a>
+            <a class="dp_wrap_pname_ori"
+               style="padding:0 10px;text-align:left;display:block;font-size:12px;overflow:hidden;height:3em;">360巴迪龙儿童手表SE（天空蓝）</a>
+            <p class=" dp_wrap_pprice_ori" style="text-align:center; color:#F63C30;" data-price="">￥199.00</p>
+        </div>
+        <div class="scroll_wrap">
+            <div class="dp_prd_wrap">
+                <div class="dp_prd">
+                    <div class="icon_plus">+</div>
+                    <div class="dp_p_wrap">
+                        <a class="dp_wrap_pimg" href="/shop/item?item_id={{value.item_id}}" target="_blank"><img src="https://p.ssl.qhmsg.com/t01bbc62d75bfc468f6.webp"/></a>
+                        <a class="dp_wrap_pname" href="/shop/item?item_id={{value.item_id}}" target="_blank">360巴迪龙儿童手表SE 表带（云朵白）</a>
+                        <p class="dp_wrap_pprice"><label><input type="checkbox" data-item="{{value.item_id}}" data-price="39"/>￥39</label>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- #endregion -->
+    <div class="bigbox noltl">
+        <!-- 看了又看 begin -->
+        <div class="looktoolook" style="display: none;">
+            <h3>看了又看</h3>
+            <ul>
+            </ul>
+        </div>
+        <!-- 看了又看 end -->
+        <!-- <div class="c" style="width:100%;"> -->
+         <div class="c">
+             <a name="gInfo"></a>
+             <div class="gTab">
+                 <div class="tab-bar">
+                     <div class="links">
+                         <a href="javascript:void(0);" class="cur" data-monitor="goodsdetails_product_click" clstag="pageclick|keycount|360PC_201709197|69">产品详情</a>
+                         <a href="#gArg" data-monitor="goodsdetails_standard_click" clstag="pageclick|keycount|360PC_201709197|70">规格参数</a>
+                         <a href="#gEvaluate" data-monitor="goodsdetails_problem_click" clstag="pageclick|keycount|360PC_201709197|71">商品评价<span class="comment-nums"></span></a>
+                         <a href="#gBespeak" id="bespeakIntroduction"  style="display:none" data-monitor="goodsdetails_problem_click">预约说明</a>
+                                                         <a href="#gConsult" data-monitor="goodsdetails_problem_click" clstag="pageclick|keycount|360PC_201709197|72">常见问题</a>
+                                                  <a href="#gTry" class="gotry" style="display:none" data-monitor="goodsdetails_try_click">试用报告</a>
+                         <!-- <a href="#gService">售后服务</a> -->
+                        <!-- {%*<a href="#gReview">用户评价</a>*%} -->
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="gCon widecontent">
+                <style>
+                    .wide_screen_box p {
+                        background: no-repeat center top;
+                        width: auto;
+                        margin: 0;
+                        padding: 0;
+                    }
+                    .wide_screen_box a {
+                        text-decoration: none;
+                    }
+                    .wide_screen_box a p {
+                        cursor: pointer;
+                    }
+                </style>
+                <div class="wide_screen_box">
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t01a7c6e67a240a4a93.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t0135a0cbf55f849ae6.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t014d2a80efbcf07a1b.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t01d98f5dd613db0d75.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t012e1a39ebfa0285db.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t017d616d3382e67d82.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t01fe329bb650fa9f11.jpg&quot;); height: 700px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t016fa22357e44b67ea.png&quot;); height: 1187px;"></p>
+                    <p style="background-image: url(&quot;https://p.ssl.qhmsg.com/t01f48dc2669fbc1c9d.jpg&quot;); height: 300px;"></p>
+                    <script>
+                        function setWideImgHeight(src, jqDom) {
+                            var img = new Image();
+                            img.onload = function () {
+                                var imgHeight = img.height;
+                                $(jqDom).css("height", imgHeight);
+                            };
+                            img.src = src.replace('http:','');
+                        }
+                        function setWideImgs(imgList) {
+                            for (var i = 0; i < imgList.length; i++) {
+                                var jqDom = $(imgList[i]),
+                                        allUrl = jqDom.css("background-image");
+                                var srcI = allUrl.substring(4, allUrl.length - 1);
+                                srcI = srcI.replace(/(\"|\')/g, "");
+                                setWideImgHeight(srcI, jqDom);
+                            }
+                        }
+                        setWideImgs($(".wide_screen_box").find("p"));
+                    </script>
+                </div>
+            </div> -->
+            <div class="gCon" id="describe">
+                
+            </div>
+            <div class="gTit">规格参数<a name="gArg" style="margin-top:-120px;display:block;visibility:hidden;"></a></div>
+            <div class="gCon" id="propCode">
+                
+            </div>
+             <div class="gTit">
+                 <a name="gEvaluate" style="display:block;visibility:hidden;position:relative;top:-100px;"></a>
+                 商品评价
+             </div>
+             <div class="gCon">
+                 <div class="evaluate">
+                 
+                     <ul class="eval-list">
+                     </ul>
+                 </div>
+        </div>
+        <div class="gTit" style="display: none" id="gBespeakDiv">预约说明<a name="gBespeak" style="margin-top:-120px;display:block;visibility:hidden;"></a></div>
+        <div class="gCon gBespeak" style="display: none">
+            <p>
+                1、部分商品预约成功后才有抢购资格，预约成功后，请关注抢购时间及时抢购，货源有限，先抢先得！
+            </p>
+            <p>
+               2、 对于预约成功享优惠的商品，抢购开始后，点击<span>“立即抢购”</span>将商品加入购物车，可在购物车查看优惠，若抢购时间结束，优惠自动失效。
+            </p>
+            <p>3、查看预约商品请至<span>【个人中心-我的预约】</span>进行查看。
+            </p>
+            <p>4、如果提供赠品，赠品赠送顺序按照预约商品购买成功时间来计算，而不是预约成功时间。
+            </p>
+            <p>
+                5、如您对活动有任何疑问，请联系客服咨询。
+            </p>
+        </div>
+                          <div class="gTit">
+                 <a name="gConsult" style="display:block;visibility:hidden;position:relative;top:-100px;"></a>
+                 常见问题
+             </div>
+             <div class="gCon">
+                 <dl class="consult">
+                                              <dt><big>1、</big><i></i>订单取消后还能恢复吗？</dt>
+                         <dd><i></i>订单一旦取消后将无法恢复，请您慎重操作。 </dd>
+                         <dt><big>2、</big><i></i>订单取消成功后退款如何返还？ </dt>
+                         <dd><i></i>订单取消后，退款会按照您购买时的支付方式原路返回。</dd>
+                         <dt><big>3、</big><i></i>对商品不满意可以申请退换货吗？如何操作？</dt>
+                         <dd><i></i>在确认收货后，7天之内可以申请退货，15天之内可以进行换货，具体操作如下:<br>进入“我的订单”，在操作区域中点击申请售后，填写问题描述，提交服务单即可完成申请。</dd>
+                         <dt><big>4、</big><i></i>为什么我的订单总是无法提交成功？</dt>
+                         <dd><i></i>可能存在以下几种情况：<br>（1）订单信息填写不完整；<br>（2）订单商品库存不足或者库存无货；<br>（3）网络延时及以上各种情况都会在页面中弹出提示信息，可以通过修改订单信息（提示信息）或者稍后再试，即可成功提交订单。</dd>
+                         <dt><big>5、</big><i></i>订单已支付成功，什么时候可以发货？ </dt>
+                         <dd><i></i>您好，订单提交成功后我们会尽快发货，详细进度您可进入“我的订单”实时查看。</dd>
+                         <dt><big>6、</big><i></i>订单发货后，还可以改送到其他地方吗？ </dt>
+                         <dd><i></i>订单一旦提交成功，将无法修改。请在提交订单前仔细检查核对。 </dd>
+                                      </dl>
+             </div>
+                         <div id="tryContent" style="display:none;">
+                <div class="gTit">
+                    <a name="gTry" style="display:block;visibility:hidden;position:relative;top:-100px;"></a>试用报告
+                    <span class="vmore"></span>
+                </div>
+                <div class="gCon">
+                    <div class="trycontent"></div>
+                </div>
+            </div>
+            <!-- <div class="gTit">售后服务<a name="gService" style="display:block;visibility:hidden;position:relative;top:-100px;"></a>
+
+        </div>
+        <!-- <div class="gTit">售后服务<a name="gService" style="display:block;visibility:hidden;position:relative;top:-100px;"></a>
+
+            </div>
+            <div class="gCon gService">
+                {%$main_item.service_item%}
+            </div> -->
+
+        </div>
+    </div>
+    </div>
+</div>
+<div class="gInfoBar" id="gInfoBar">
+    <div class="gTab">
+        <div class="tab-bar">
+            <div class="links">
+                <a href="#gInfo" class="cur" clstag="pageclick|keycount|360PC_201709197|69">产品详情</a>
+                <a href="#gArg" clstag="pageclick|keycount|360PC_201709197|70">规格参数</a>
+                <a href="#gEvaluate" clstag="pageclick|keycount|360PC_201709197|71">商品评价<span class="comment-nums"></span></a>
+                <a href="#gBespeak" id="bespeakIntroduction-float"  style="display:none" >预约说明</a>
+                                    <a href="#gConsult" clstag="pageclick|keycount|360PC_201709197|72">常见问题</a>
+                                <!-- <a href="#gTry" class="gotry" data-monitor="goodsdetails_try_click" style="display:none;">试用报告</a> -->
+                <!-- <a href="#gService">售后服务</a> -->
+                <a style="display: none;" href="javascript:void(0);" class="gInfoBtn gInfoBtn-sellout offshelf-button">已下架</a>
+                <a  href="javascript:void(0);" class="gInfoBtn gInfoBtn-sellout sellout-button">已售罄</a>
+                <a style="display: none;" href="javascript:void(0);" class="gInfoBtn gInfoBtn-addcart addcart-button" data-monitor="goodsdetails_buy_click" clstag="pageclick|keycount|360PC_201709197|67"><span class="gInfoBtn-icon gInfoBtn-icon-cart"></span>加入购物车</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak gInfoBtn-begin" style="display: none;float:right" id="wiiBespeak-float">即将开始</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none;float:right" id="bespeakNow-float" clstag="pageclick|keycount|360PC_201709197|65">立即预约</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak gInfoBtn-begin" style="display: none;float:right" id="waitToBuy-float">即将开抢</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none;float:right" id="buyNow-float" clstag="pageclick|keycount|360PC_201709197|66">立即抢购</a>
+                <a href="javascript:;" class="gInfoBtn gInfoBtn-bespeak" style="display: none;float:right" id="buybuybuy-float" onclick="SecKill()" clstag="pageclick|keycount|360PC_201709197|64">抢购</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="mask"></div>
+<div id="zoomView" style="display:none;">
+    <img width="800" height="800" alt=""/>
+</div>
+
+<style>
+    /* 解决luyou.mall.360.com主样式表覆盖在线客服频道选择框的问题 */
+    #page_mall360footer {overflow: visible;}
+</style>
+
+<script>
+    var remain = -1;
+</script>
+<script src="//static.i360mall.com/mall/js/common/jquery.lazyload.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/template.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/underscore1.8.2.js?v=0.0.26"></script>
+<script>
+    var prd = {
+        price:199.00,
+        slogan: '更超值的彩屏电话手表'
+    };
+</script>
+<script src="//static.i360mall.com/mall/js/shop/itemSpec2.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/shop/item.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/common/myPage.js?v=0.0.26"></script>
+<script>
+</script>
+<script id="tpl_dapei" type="text/html">
+    {{each list as value index}}
+    <div class="dp_prd">
+        <div class="icon_plus">+</div>
+        <div class="dp_p_wrap">
+            <a class="dp_wrap_pimg" href="/shop/item?item_id={{value.item_id}}" target="_blank"><img src="{{value.img_content.protocol()}}"/></a>
+            <a class="dp_wrap_pname" href="/shop/item?item_id={{value.item_id}}" target="_blank">{{value.title}}</a>
+            <p class="dp_wrap_pprice"><label><input type="checkbox" data-item="{{value.item_id}}" data-price="{{value.price_sale}}"/>￥{{value.price_sale}}</label>
+            </p>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/html" id="tpl_try">
+    {{each reports as value index}}
+    <dl class="trybox" data-monitor="goodsdetails_try_report{{index+1}}">
+        <dt><a href="{{value.link}}" target="_blank"><img data-size="318_212_" data-original="{{value.img_list}}"></a></dt>
+        <dd>
+	            <span class="trytitle">
+	                <a href="{{value.link}}" target="_blank">{{value.title}}</a>
+	            </span>
+            <span class="trycontent">
+	                <a href="{{value.link}}" target="_blank">
+                        {{value.wbsummary}}
+                    </a>
+
+	            </span>
+            <span class="trytag">
+	                <em>作者：{{value.username}}</em>
+	                <em class="data">{{value.createtime}}</em>
+	            </span>
+        </dd>
+    </dl>
+    {{/each}}
+</script>
+
+<script>
+    var limit_num = 200;
+    var stock_num = 200;
+    $('.tcode-w .tcode').mouseenter(function () {
+        $('.tcode-w').addClass('tcodeHover');
+    }).mouseleave(function () {
+        $('.tcode-w').removeClass('tcodeHover');
+    })
+    $('.tcode-d .tcode').mouseenter(function () {
+        $('.tcode-d').addClass('tcodeHover');
+    }).mouseleave(function () {
+        $('.tcode-d').removeClass('tcodeHover');
+    })
+
+    var dealWithBtns = function (value) {
+        value = parseInt($.trim(value), 10);
+        var max = limit_num;
+        var storeNum = stock_num;
+
+        if (max > 0 && value >= max) {
+            $(".gcIpt .increment").addClass("disabled");
+        }
+        else if (value >= storeNum) {
+            $(".gcIpt .increment").addClass("disabled");
+        }
+        else {
+            $(".gcIpt .increment").removeClass("disabled");
+        }
+
+        if (value > 1) {
+            $(".gcIpt .decrement").removeClass("disabled");
+        }
+        else {
+            $(".gcIpt .decrement").addClass("disabled");
+        }
+    };
+
+    $(".goodsCount").bind("setvalue", function (e) {
+        dealWithBtns($(this).val());
+    });
+
+    $(".goodsCount").bind("textblur", function (e) {
+        var tar = $(e.target);
+        var text = $.trim($(tar).val());
+
+        if ("" === text) {
+            $(tar).val("1");
+            $(tar).trigger("setvalue");
+            return;
+        }
+
+        if (!/^\d+$/.test(text)) {
+            $(tar).val("1");
+            $(tar).trigger("setvalue");
+            return;
+        }
+
+        var val = parseInt(text, 10);
+        var max = limit_num | 0;
+        var storeNum = parseInt(stock_num, 10);
+
+        if (val === 0) {
+            $(tar).val("1");
+            $(tar).trigger("setvalue");
+            return;
+        }
+
+        if (max > 0 && val > max) {
+            mall.dialog.alert("购买数量超出限制!");
+            $(tar).val(max);
+
+            $(tar).trigger("setvalue");
+            return;
+        }
+
+        if (max == 0 && val > storeNum) {
+            mall.dialog.alert("购买数量超出库存!");
+            $(tar).val(storeNum);
+
+            $(tar).trigger("setvalue");
+            return;
+        }
+
+        $(tar).trigger("setvalue");
+    });
+
+    $(".goodsCount").on("blur", function () {
+        $(this).trigger("textblur");
+    });
+
+    // {%if $is_main==0 && $main_item['store_num']!=0%}
+    $(".decrement,.increment").click(function (e) {
+        var count = $(this).siblings(".goodsCount").val() | 0;
+        var num = $(this).attr('data-num') | 0;
+        var max = limit_num | 0;
+
+        count = count + num;
+
+        if (count < 1) {
+            count = 1;
+            $(".decrement").addClass("disabled");
+        }
+        else if (max > 0 && count > max) {
+            mall.dialog.alert("已达到最大购买数量，无法继续添加");
+            $(".increment").addClass("disabled");
+            count = max;
+        }
+        else {
+            $(".increment").removeClass("disabled");
+            $(".decrement").removeClass("disabled");
+        }
+
+        $(this).siblings(".goodsCount").val(count);
+        $(".goodsCount").trigger("setvalue");
+    });
+
+    $(".decrement,.increment").hover(function (e) {
+        var eobj = $(e.target);
+        if (!eobj.hasClass("disabled")) {
+            eobj.addClass("hover");
+        }
+    }, function (e) {
+        $(e.target).removeClass("hover");
+    });
+    $(".getCart,.gInfoBtn-addcart").click(function (e) {
+        mall.header.getUserInfo({},function () {
+            $.post("/cart/addToCart", {
+                itemId: "4021675",
+                num: $(".goodsCount").val()
+            }, function (dt) {
+                if (dt.errorCode == 0) {
+                    goto("//trade.i360mall.com/cart?t=" + new Date().getTime());
+                }else if (dt.errorCode == 201) {
+                    mall.dialog.alert("加入购物车太频繁，请稍后再试");
+                } else {
+                    mall.dialog.alert("加入购物车失败");
+                }
+            }, 'json');
+        },function(){
+            location.href = "/login?returnUrl="+encodeURIComponent("//i360mall.com/shop/item?itemId=4021675&t="+(new Date()).getTime());
+        });
+        log&&log('360PC_201709197','67','4021675');
+    });
+    function bespokeOrNot(){
+        mall.header.getUserInfo({},function () {
+            $.post("/shop/bespokeOrNot", {
+                itemId: "4021675"
+            }, function (data) {
+                if (data ) {
+                    addToCart();
+                }else {
+                    location.href = "/shop/noBespeak?itemId=" + "4021675"+"&t=" + new Date().getTime();
+                }
+            }, 'json');
+        },function(){
+            location.href = "/login?returnUrl="+encodeURIComponent("//i360mall.com/shop/item?itemId=4021675&t="+(new Date()).getTime());
+        });
+    }
+    function changePage (itemId,type,num,current,pageSize,total) {
+        var pagenum;
+        if(type == 'first'){
+            pagenum = 1;
+        }else if(type == 'last'){
+            pagenum = total;
+        } else if(type == 'up'){
+            pagenum = current-1;
+        }else if(type == 'down'){
+            pagenum = current + 1;
+        }else if(type == 'x'){
+            pagenum = num;
+        }
+        $(".eval-list").empty();
+        $(".pagelist").remove();
+        shopItem.getComment(itemId,pagenum,pageSize);
+        var top = $(".eval-list").offset().top;
+        $('body,html').animate({scrollTop:top}, 500);
+    }
+    $("#bespeakNow").click(function () {
+                $(this).removeAttr("onclick");
+                location.href = "/shop/addPresellQuali?itemId=" + "4021675"+"&t=" + new Date().getTime();
+            }
+    );
+    $("#bespeakNow-float").click(function () {
+                $(this).removeAttr("onclick");
+                location.href = "/shop/addPresellQuali?itemId="+ "4021675"+"&t=" + new Date().getTime();
+            }
+    );
+    var addCartFlag = true;
+    function addToCart(){
+        $("#buyNow").removeAttr("onclick");
+        $("#buyNow-float").removeAttr("onclick");
+        mall.header.getUserInfo({},function () {
+            $.post("/cart/addToCart", {
+                itemId: "4021675",
+                num: $(".goodsCount").val()
+            }, function (dt) {
+                if (dt.errorCode == 0) {
+                    goto("//trade.i360mall.com/cart?t=" + new Date().getTime());
+                }else if (dt.errorCode == 201) {
+                    mall.dialog.alert("加入购物车太频繁，请稍后再试");
+                } else {
+                    mall.dialog.alert("加入购物车失败");
+                }
+            }, 'json');
+        },function(){
+            location.href = "/login?returnUrl="+encodeURIComponent("//i360mall.com/shop/item?itemId=4021675&t="+(new Date()).getTime());
+        });
+    }
+
+    function SecKill(){
+        goto("//trade.i360mall.com/seckill/gotoSecKill?itemId=" + "4021675"+"&t=" + new Date().getTime());
+        $(this).removeAttr("onclick");
+
+    }
+</script>
+
+<script>
+    $(function(){
+        itemSpec && itemSpec.handleCate(
+                '4021675,4740082,4740102',
+                {
+                color:   ["尊享升级版（含16G卡）","标准升级版","美猴王版-白（含32G卡）"] ,
+                size:  [""] ,
+                colorSize:  [{"color":"标准升级版","colorSequence":"2","size":"","sizeSequence":"0","skuId":"4021675","spec":"","specName":"","specSequence":"1"},{"color":"美猴王版-白（含32G卡）","colorSequence":"3","size":"","sizeSequence":"0","skuId":"4740082","spec":"","specName":"","specSequence":"1"},{"color":"尊享升级版（含16G卡）","colorSequence":"1","size":"","sizeSequence":"0","skuId":"4740102","spec":"","specName":"","specSequence":"1"}] ,
+                currentKey:  4021675                 }
+        );
+
+        shopItem.init("4021675", getCookie('_area_id_'), '//static.i360mall.com');
+
+        /** 延时加载
+         $('.c img').lazyload({
+            threshold: 200,
+            placeholder: "//static.i360mall.com/mall/images/default_img.jpg"
+        }); **/
+
+        initService();
+
+        bindArea();
+
+        shopItem.getProductType("4021675",getCookie('_area_id_'));
+        //shopItem.getComment("4021675","1","10");
+
+        shopItem.lookToItem("4021675",getCookie('_area_id_'),"1","1",'//static.i360mall.com');
+
+        itemPromotion && itemPromotion.init("4021675", getCookie('_area_id_'), '//static.i360mall.com');
+    });
+
+    var bindArea = function(){
+        $.ajax({
+            url: "/area/getByLocationId",
+            type: "post",
+            async:true,
+            data:{"locationId":getCookie('_area_id_')},
+            dataType: "json",
+            success: function(data){
+                if(data && data.errorCode == 0 && data.data){
+                    var locationId = data.data;
+                    //$(".m-address-tt").html(location['name'] + '<i></i>');
+                    $(".m-address-tt").html(area.getLocation(locationId['code']) + '<i></i>');
+
+                    $(".m-address-tt").on('click', function(e) {
+                        if($(".m-address")&&$(".m-address").length==0){
+                            area.init("4021675",locationId['code']);
+                            $('.tt-item.level-2').trigger("click");
+                        }
+                        var _this = $(this).parent();
+                        _this.toggleClass('open');
+                    });
+                }
+            },
+            error : function() {
+                //init(cateData);
+            }
+        });
+
+        $(body).click(function(e){
+            if(!$(e.target).is('.g-address') && !$(e.target).is('.g-address *')){
+                $('.g-address').removeClass('open');
+            }
+        });
+    };
+
+    function getCookie(c_name)
+    {
+        if (document.cookie.length>0)
+        {
+            c_start=document.cookie.indexOf(c_name + "=");
+            if (c_start!=-1)
+            {
+                c_start=c_start + c_name.length+1;
+                c_end=document.cookie.indexOf(";",c_start);
+                if (c_end==-1) c_end=document.cookie.length;
+                return unescape(document.cookie.substring(c_start,c_end));
+            }
+        }
+        return "";
+    };
+    var initService = function(){
+        if("4021675"!=""){
+            $(".inline-kefu").attr("onclick","clickService()");
+            $(".chatjd_dl").attr("onclick","clickService()");
+        }
+    };
+
+    var clickService = function(){
+        window.open("/chat/forItem?itemId=4021675&t=" + (new Date()).getTime());
+        return true;
+    };
+</script>
+
+<script src="//static.i360mall.com/mall/js/shop/area2.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/shop/promotion.js?v=0.0.26"></script>
+<script src="//static.i360mall.com/mall/js/layer.js?v=0.0.26"></script>
+<script>
+    //360点睛代码
+    var _mvq = window._mvq || [];
+    window._mvq = _mvq;
+    _mvq.push(['$setAccount', 'm-251506-0']);
+    _mvq.push(['$setGeneral', 'goodsdetail', '', /*用户名*/ '', /*用户id*/ '']);
+    _mvq.push(['$logConversion']);
+    var categroyNames = '汽车用品;车载电器;行车记录仪'.split(";");
+    _mvq.push(['$addGoods',
+        /*分类id*/ '10036,10048',
+        /*品牌id*/ '10051',
+        /*商品名称*/ '360行车记录仪标准升级版 J501C 安霸A12 高清夜视 WIFI连接 智能管理 黑色',
+        /*商品ID*/ '4021675',
+        /*商品售价*/ '329.00',
+        /*商品图片url*/ 'http://img13.360buyimg.com/N1/s450x450_jfs/t3511/329/870984430/172906/bc3526bc/5817039cN5b5a9930.jpg',
+        /*分类名*/ '',
+        /*品牌名*/ '360',
+        /*商品库存状态1或是0*/ '',
+        /*网络价*/ '359.00',
+        /*收藏人数*/ '',
+        /*商品下架时间*/ '',
+        /*一级分类名*/categroyNames[0]?categroyNames[0]:'',
+        /*二级分类名*/categroyNames[1]?categroyNames[1]:'',
+        /*三级分类名*/categroyNames[2]?categroyNames[2]:'']);
+    _mvq.push(['$addPricing', /*价格描述*/ '']);
+    _mvq.push(['$logData']);
+</script>
+
+<script async src="//static.i360mall.com/mall/js/shop/gather.js?v=0.0.26"></script>
+    
+    <div class="mod-footer">
+    <div class="foot-bannerw">
+        <div class="foot-banner clearfix">
+            <div class="banner-item"><i class="icon1">7</i>7天无理由退货</div>
+            <div class="banner-item"><i class="icon2">15</i>质量问题15天换货</div>
+            <div class="banner-item"><i class="icon3">包</i>满99元包邮</div>
+            
+        </div>
+    </div>
+    <div class="foot-containerw">
+        <div class="foot-container clearfix">
+            <dl class="foot-con">
+                <dt data-monitor='home_foot_freshman'>帮助中心</dt>
+            
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toLoginForgotPassword"
+                       rel="nofollow">用户登录与密码找回</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toRegisterAgreement"
+                       rel="nofollow">用户注册协议</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toBuyingGuide"
+                       rel="nofollow">购买指南</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toPaymentMethod"
+                       rel="nofollow">支付方式</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toExpressInstructions"
+                       rel="nofollow">配送与说明</a></dd>
+            </dl>
+            <dl class="foot-con">
+                <dt data-monitor='home_foot_help'>售后服务</dt>
+                <dd data-monitor='home_help_help'>
+                    <a target="_blank" href="//i360mall.com/help/toSevenDaysReturn"
+                       rel="nofollow">7日无理由退货</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toFifteemDaysExchange"
+                       rel="nofollow">质量问题15日内换货</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toWarrantyClause"
+                       rel="nofollow">保修条款</a></dd>
+                <dd><a target="_blank"
+                       href="//i360mall.com/help/toAfterSaleService"
+                       rel="nofollow">售后服务运费规则</a></dd>
+            </dl>
+            <dl class="foot-con contactus">
+                <dt>联系我们</dt>
+                <dd><span class="call-number">400-6822-360</span></dd>
+                <dd class="call-time">
+                    周一至周日 9:00-18:00
+                </dd>
+                <dd><span class="call-number">400-0111-366<span class="beizhu">（手机类产品）</span></span></dd>
+                <dd class="call-time">
+                    周一至周日 9:00-21:00<br>
+                    （仅收市话费）
+                </dd>
+            </dl>
+            <dl class="foot-con foot-con-2">
+                <dd class="servicebox">
+                    <p> <a class="weixin"><img src="//static.i360mall.com/mall/images/weixin_icon.png">
+                        <span class="wxtips">
+                <img src="//static.i360mall.com/mall/images/t01d06b994b8798623c.jpg" height="80" width="80">
+                </span>
+                    </a>
+                    </p>
+                    <p><a class="weibo" data-monitor="home_foot_weibo" href="http://weibo.com/qikoo360" target="_blank">
+                        <img src="//static.i360mall.com/mall/images/weibo_icon.png">
+                        <span class="wxtips">
+                 <img src="//static.i360mall.com/mall/images/wbewm.jpg" height="80" width="80">
+                </span>
+                    </a>
+                    </p>
+                </dd>
+            </dl>
+        </div>
+    </div>
+    <div class="footer-copyright"><p>360商城©2013-2017 360公司版权所有 京ICP备17017089号 京公网安备11000002000006号</p>
+        
+    </div>
+</div>
+<!-- 新侧栏 begin -->
+<div id="leftsub">
+    <ul>
+        <li class="coupontip couponbuttion" style="display: none;">
+            <img src="//static.i360mall.com/mall/images/lscoupon.png">
+        </li>
+        <li class="wechattip">
+            <img src="//static.i360mall.com/mall/images/lswechat.png">
+            <div class="wechatcont">
+                <img src="//static.i360mall.com/mall/images/t01d06b994b8798623c.jpg">
+                <p class="conttext">扫码关注官方微信<br>先人一步知晓促销活动</p>
+            </div>
+        </li>
+        <li class="storetip">
+            <img src="//static.i360mall.com/mall/images/lsstore.png">
+            <div class="storecont">
+                <img src="//static.i360mall.com/mall/images/qcode_app.jpg">
+                <p class="conttext">下载客户端</p>
+            </div>
+        </li>
+        <li class="coupontip" id="totopnew" style="display: none;">
+            <img src="//static.i360mall.com/mall/images/totopnew.png">
+        </li>
+    </ul>
+    <div class="couponcont">
+        
+    </div>
+</div>
+<script type="text/javascript">
+
+    var coupontip = document.getElementById('leftsub').getElementsByTagName('li')[0];
+    //var couponenter = document.getElementById('couponenter');
+    //var lsclose = document.getElementById('lsclose');
+    var leftsub = document.getElementById('leftsub');
+    // 点击其他地方，关闭优惠券弹出
+    if (document.body.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        document.body.addEventListener("click", function (ev) {
+            document.getElementById("leftsub").style.right = '3px';
+            coupontip.className = coupontip.className.replace(/ active/,'');
+        });
+    } else if (document.body.attachEvent) {  // IE 8 及更早版本
+        document.body.attachEvent("onclick", function (ev) {
+            document.getElementById("leftsub").style.right = '3px';
+            coupontip.className = coupontip.className.replace(/ active/,'');
+        });
+    }
+    // 点击左侧菜单，不关闭
+    if (leftsub.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        leftsub.addEventListener("click", function (ev) {
+            ev.stopPropagation();
+        });
+    } else if (leftsub.attachEvent) {  // IE 8 及更早版本
+        leftsub.attachEvent("onclick", function (ev) {
+            window.event.cancelBubble = true;
+        });
+    }
+
+    function couponShow(ev) {
+        if (coupontip.addEventListener) {
+            ev.stopPropagation();
+        }
+        else {
+            window.event.cancelBubble = true;
+        }
+        if (document.getElementById("leftsub").style.right === '300px') {
+            document.getElementById("leftsub").style.right = '3px';
+            coupontip.className = coupontip.className.replace(/ active/,'');
+        } else {
+            //document.getElementById("leftsub").style.right = '300px';
+            coupontip.className = coupontip.className + ' active';
+            itemPromotion && itemPromotion.showCoupon(ev);
+        }
+    }
+    /*if (coupontip.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        coupontip.addEventListener("click", couponShow);
+    } else if (coupontip.attachEvent) {  // IE 8 及更早版本
+        coupontip.attachEvent("onclick", couponShow);
+    }*/
+    /*if (lsclose && lsclose.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        lsclose.addEventListener("click", couponShow);
+    } else if (lsclose && lsclose.attachEvent) {  // IE 8 及更早版本
+        lsclose.attachEvent("onclick", couponShow);
+    }*/
+
+    /*if (couponenter && couponenter.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        couponenter.addEventListener("click", couponShow);
+    } else if (couponenter && couponenter.attachEvent) {  // IE 8 及更早版本
+        couponenter.attachEvent("onclick", couponShow);
+    }*/
+    /*
+            ** 新返回顶部
+            */
+    var totopnew = document.getElementById('totopnew');
+    function totopfun() {
+        document.body.scrollTop = 0;
+        window.scrollTo( 0, 0 );
+    }
+    window.onscroll = function () {
+        var top = document.documentElement.scrollTop || document.body.scrollTop;
+        if (top > 600) {
+            totopnew.style.display = 'block';
+        } else {
+            totopnew.style.display = 'none';
+        }
+    }
+    if (totopnew.addEventListener) {  // 所有主流浏览器，除了 IE 8 及更早版本
+        totopnew.addEventListener("click", totopfun);
+    } else if (totopnew.attachEvent) {  // IE 8 及更早版本
+        totopnew.attachEvent("onclick", totopfun);
+    }
+
+</script>
+<!-- 新侧栏 end -->
+
+<div id="serviceSelectorMask"></div>
+<div class="fixed dialog" id="serviceSelector">
+    <span class="icon close" onclick="hideServiceSelector();"></span>
+    <p class="title">产品咨询</p>
+    <p class="description">咨询时间 <em>8:00-22:00</em></p>
+    <ul class="flex">
+        <li class="phone" onclick="openNtalker(true);">360手机&amp;配件</li>
+        <li class="watch" onclick="openNtalker();">360儿童手表</li>
+        <li class="recorder" onclick="openNtalker();">360行车记录仪</li>
+        <li class="camera" onclick="openNtalker();">360智能摄像头</li>
+        <li class="more" onclick="openNtalker();">其他产品</li>
+    </ul>
+    <div class="bg-shadow"></div>
+</div>
+<!--footer end-->
+
+<script src="//static.i360mall.com/mall/js/common/jquery.lazyload.min.js?v=0.0.14"></script>
+<script src="//static.i360mall.com/mall/js/common/utils.js?v=0.0.14"></script>
+
+<style>
+    /* 解决luyou.mall.360.com主样式表覆盖在线客服频道选择框的问题 */
+    #page_mall360footer {
+        overflow: visible;
+    }
+</style>
+
+
+<script type="text/javascript">
+    $(window).scroll(function(){
+        if($(document).scrollTop() >= 300){
+            $(".topback").css("visibility","visible");
+        } else{
+            $(".topback").css("visibility","hidden");
+        }
+    });
+    $(function(){
+        $(".xian").hover(function(){
+            $(".sublistbox"+$(this).attr("data-type")).stop().animate({"height":"230px","opacity":"1"},500).fadeIn("fast");
+        },function(){
+            $(".sublistbox"+$(this).attr("data-type")).stop().fadeOut("fast");
+        });
+        $(".sublistbox").hover(function(){
+            $(this).stop().animate({"height":"230px","opacity":"1"},500);
+        },function(){
+            $(this).stop().animate({"height":"0px","opacity":"0"},500);
+            $(this).delay(350).hide(0);
+        });
+
+        $(".topshopcart").hover(function(){
+            $(".header-cart").addClass('cart-hover');
+            $(".header-cart-popup").css("display","block");
+            $(".cart-info").css("display","block");
+        },function(){
+            $(".header-cart").removeClass('cart-hover');
+            $(".header-cart-popup").css("display","none");
+            $(".cart-info").css("display","none");
+        });
+        $("#__mall_search_kw__").focus(function(event){
+            $(this).attr("placeholder","");
+        }).click(function(e){
+            e.stopPropagation();
+        });
+        $("#__mall_search_kw__").blur(function(e){
+            $(this).attr("placeholder", $(this).attr("data"));
+        });
+        $("body").focus(function(event){
+            $(".__mall_suggest__").css("display","none");
+        }).click(function(){
+            $(".__mall_suggest__").css("display","none");
+        });
+
+
+        $(".quc-mask-panel").hide();
+        $(".quc-panel-close").click( function () {
+            $(".quc-mask-panel").hide();
+        });
+
+        $('.quc-main2').hide();
+        $('.quc-sign-in-nav a').click(function() {
+            var i = $(this).index();
+            $(this).addClass('quc-current').siblings().removeClass('quc-current');
+            $(".quc-main").eq(i).show().siblings().hide();
+            $(".quc-footer").show();
+            $(".quc-tip-wrapper").show();
+        });
+
+        $(".topback").on("click", function() {
+            $('body,html').animate({scrollTop:0}, 200);
+        });
+    })
+    function  go_search(self) {
+        var keyword=$(self).attr("data");
+        window.location.href="//i360mall.com/search/?q="+keyword;
+        $(".__mall_suggest__").css("display","none");
+    }
+</script>
+<!-- commonFooter_old.vmr.vm  end -->
+
+
+    <script type="text/javascript">
+        var jaq = jaq || [];
+        jaq.push(['account', 'JA2017_113665']); //站点编号
+        jaq.push(['domain', 'i360mall.com']);  //站点域名
+
+        (function () {
+            var ja = document.createElement('script');
+            ja.type = 'text/javascript';
+            ja.async = true;
+            ja.src = '//wl.jd.com/joya.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ja, s);
+        })();
+    </script>
+</body>
+</html>

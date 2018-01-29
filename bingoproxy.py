@@ -7,7 +7,7 @@ import re
 import json
 import time
 
-
+sql_response_list=['text/html']
 
 from dbmodel import *
 #定义需要监听的url  {正则表达式 完整url}
@@ -26,9 +26,13 @@ def judge_monitor_for_single(url):
                 return u
     return False
 def judge_monitor_for_type(response):
-    '''通过文件类型 盘独生女是否需要存储'''
-    content_type=response.headers['Content-Type'].split(";")[0]
-    print("############################################  content-type:",content_type)
+    '''通过文件类型 判断是否需要存储'''
+    try:
+        content_type=response.headers['Content-Type'].split(";")[0].split(",")[0]
+        print(content_type)
+    except:
+        print(response.headers)
+        return False
     filter_type=[x.decode("utf-8") for x in config.r.smembers("filter_type")]
     if content_type in filter_type:
         return True
@@ -48,12 +52,18 @@ def parser_data(request,response):
     status_code=response.status_code  #int
     host=request.host
     path=request.path
-    content_type=response.headers['Content-Type']
+    content_type=response.headers['Content-Type'].split(";")[0].split(",")[0]
     response_headers=json.dumps({key:val for (key,val) in response.headers.items()})#<class 'mitmproxy.net.http.headers.Headers'>
-    filename=file_path+"/"+str(int(time.time()))+config.all_type.get(content_type,"kn")
-    with open(filename,'wb') as f:
-        f.write(response.content)
-    response_content=filename
+    #根据文件类型判断是直接写入数据库还是写入文件
+    print(request.url,'-=-=-=---=-=-=-=--==-')
+    if content_type in sql_response_list:
+    	response_content = response.content.decode()
+    else:
+        
+        filename=file_path+"/"+str(int(time.time()))+config.all_type.get(content_type,"kn")
+        with open(filename,'wb') as f:
+            f.write(response.content)
+        response_content=filename
     insert_code=insert_agency(
         url,
         method,
@@ -73,14 +83,13 @@ def parser_data(request,response):
 def response(flow: http.HTTPFlow) -> None:
     monitor_type=r.get("monitor_type").decode('utf-8')
     data = flow.get_state()
-    print("+++++++++++++++++++++++++",monitor_type)
     if monitor_type == 'no':
         pass
     elif monitor_type=="all":
         #监听所有的url 存储
         parser_data(flow.request, flow.response)
     elif monitor_type =='single':
-        # 监听指定类型
+        # 监听指定url
         url=flow.request.url
         juge_result=judge_monitor_for_single(url)
         if juge_result:

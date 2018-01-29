@@ -112,4 +112,4 @@ def settings():
     monitor_type=config.r.get("monitor_type").decode("utf-8")
     return render_template('settings.html',alltype=alltype,monitor_url=monitor_url,monitor_type=monitor_type)
 if __name__ == '__main__':
-    app.run(port=5004)
+    app.run(port=5000)

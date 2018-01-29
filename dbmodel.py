@@ -1,11 +1,27 @@
 from config import conn, logging
 from pymysql.err import InternalError
+from sqlite3 import OperationalError 
 c = conn.cursor()
 
 
 def init_table():
     '''
      创建数据表
+    '''
+    create_table_sql_sqlite='''
+    create table agency(id INT  AUTO_INCREMENT primary key,
+        url varchar,
+        method varchar,
+        status_code smallint,
+        host varchar,
+        path varchar,
+        content_type varchar,
+        request_headers text,
+        response_headers text,
+        request_content text null,
+        response_content text,
+        recodetime datetime DEFAULT CURRENT_TIMESTAMP
+                )
     '''
     create_table_sql = '''
     create table agency(
@@ -24,16 +40,18 @@ def init_table():
         )ENGINE=InnoDB DEFAULT CHARSET=utf8;
     '''
     try:
-        c.execute(create_table_sql)
+        c.execute(create_table_sql_sqlite)
         conn.commit()
     except InternalError:
+        pass
+    except OperationalError:
         pass
     except Exception as e:
         logging.warning('数据库创建失败')
         print("创建数据库失败:", e)
 
 
-init_table()
+# init_table()
 
 
 def insert_agency(
@@ -67,10 +85,10 @@ def insert_agency(
         host=host,
         path=path,
         content_type=content_type,
-        request_headers=request_headers,
-        response_headers=response_headers,
-        request_content=request_content,
-        response_content=response_content
+        request_headers=request_headers.replace("'","''"),
+        response_headers=response_headers.replace("'",'"'),
+        request_content=request_content.replace("'",'"'),
+        response_content=response_content.replace("'",'"')
     )
     try:
         # print(sql)
@@ -79,7 +97,5 @@ def insert_agency(
         return True
     except Exception as e:
         logging.warning("save data error SQL:", sql)
-        print("+++++++++++++++++++++++++++++++++++++++++++++")
         print(sql)
-        print("+++++++++++++++++++++++++++++++++++++++++++++")
         return e
