@@ -1,5 +1,5 @@
 # 开始
-git clone git@github.com:tongchengbin/BingoProxy.git
+git clone https://github.com/tongchengbin/BingoProxy.git
 # 设置
   填写数据库信息 redis
 # 开始使用
